@@ -41,7 +41,7 @@ Este programa con operadores finales:
 
 # ¿Por qué es peor la métrica?
 
-La razón es simple: De acuerdo a la nueva lista de operadores, signos de puntuación y aclaraciones del desafió  el repositorio global falla en ciertos casos como por ejemplo el caso en que los operadores que son signos se encuentran juntos a otros operadores u operando. Dando un ejemplo mas concreto seria el caso de a<=1.00, en donde si se toma en consideración la nueva lista de operadores, se debería separar el operador <=, lo que el repositorio viejo no hace.
+La razón es simple: De acuerdo a la nueva lista de operadores, signos de puntuación y aclaraciones del desafió, el repositorio global falla en ciertos casos. Un ejemplo es el caso en que los operadores que son signos de comparación se encuentran juntos a otros operadores u operando. Dando un ejemplo mas concreto seria el caso de a<=1.00, en donde si se toma en consideración la nueva lista de operadores, se debería separar el operador <= de la letra a y de los dos numeros, lo que el repositorio viejo no hace.
 
 # Aclaración final
 
