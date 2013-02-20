@@ -1,7 +1,0 @@
-input
-print
-if
-else
-then
-while
-<=

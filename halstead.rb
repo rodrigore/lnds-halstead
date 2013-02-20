@@ -1,9 +1,9 @@
 oper = File.read(ARGV[0]).split
 n1, N1 ,n2 ,N2 = [], [], [], []
-special = '\<\=\>\*\+\-\~\^\&\|\!\@\#\$\%'
+special = '\<\=\>\*\+\-\~\^\&\|\!\@\#\$\%\?\~'
 punct = '\.\(\)\,\[\]\{\}\:\;'
 
-toks = File.read(ARGV[1]).gsub(/([#{special}]+)/,' \1 ').scan(/["'].*?["']|[^#{punct}\s]+/).each do |t|
+toks = File.read(ARGV[1]).gsub(/([#{special}]+)/,' \1 ').scan(/['"][^'"]+['"]|[^#{punct}\s]+/).each do |t|
   if oper.include?(t)
     unless n1.include?(t) then n1 << t end 
      N1 << t
